@@ -1,40 +1,13 @@
+/* Set margin and padding of the body to 0 and set a background color */
 body {
 	margin: 0;
 	padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #00356B;
 }
 
-.title-header {
-    font-size: 48px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 0;
-}
-
-.title-subheader {
-    font-weight: 500;
-    font-size: 24px;
-    color: white;
-    margin-top: 0;
-}
-
-.table-header {
-    margin: 0 auto;
-    width: 80%;
-    border: none;
-}
-
-.table-header-td {
-    border-right: 3px solid #ccc;
-    border-bottom: none;
-}
-
-.table-header-link {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-
+/* Set the header to be positioned absolutely in the center of the screen, with a padding of 50px at the top and bottom */
 .header {
     position: absolute;
 	top: 50%;
@@ -43,6 +16,44 @@ body {
     padding: 50px 0;
 }
 
+/* Set the main title to have a font size of 48px, be bold, have a white color, and no margin at the bottom */
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0;
+}
+
+/* Set the subheader to have a font weight of 500, a font size of 24px, a white color, and no margin at the top */
+.title-subheader {
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    margin-top: 0;
+}
+
+/* Set the navigation table to be centered with no border */
+.nav-table {
+    margin: 0 auto;
+    width: 80%;
+    border: none;
+}
+
+/* Set the navigation table cell to have a right border of 3px solid #ccc and no bottom border */
+.nav-table-cell {
+    border-right: 3px solid #ccc;
+    border-bottom: none;
+}
+
+/* Set the navigation table links to have a font size of 24px, be bold, have a white color, and no text decoration */
+.nav-table-link {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Set the particles-js div to have a background color of #00356B and fill the entire screen */
 #particles-js {
     background: #00356B;
     position: absolute;
