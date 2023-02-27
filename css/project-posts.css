@@ -28,7 +28,7 @@
     background: whitesmoke;
 }
 
-/* This CSS class sets a margin of 20 pixels around elements with the class "projects-text" */
+/* This CSS class sets a margin of 10 pixels around elements with the class "projects-wip" */
 .projects-text {
     margin: 20px;
 }
@@ -37,9 +37,10 @@
     /* Set margins to create spacing around the image */
     margin-left: 20px;
     margin-top: 20px;
+    margin-right: 20px;
     
     /* Float the image to the right */
-    float: left;
+    float: right;
     
     /* Set the image width to fill its container, while preserving its aspect ratio */
     max-width: 100%;

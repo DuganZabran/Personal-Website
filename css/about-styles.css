@@ -23,19 +23,25 @@
     font-size: 18px;
 }
 
-/* Styles an about image with maximum width, auto height, black 2px solid border,
-10px border radius for rounded corners, and a box-shadow effect for depth */
 .about-image {
-    max-width: 100%;
+    /* Set margins to create spacing around the image */
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+    /* Float the image to the right */
+    float: left;
+    
+    /* Set the image width to fill its container, while preserving its aspect ratio */
+    width: 20%;
     height: auto;
+    
+    /* Add a border to the image */
     border: 2px solid #000000;
     border-radius: 10px;
+    
+    /* Add a subtle box shadow to give the image some depth */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Adds a 20px margin to an about image div */
-.about-image-div {
-    margin: 20px;
 }
 
 /* Sets the background of an about body section to whitesmoke */
@@ -43,14 +49,9 @@
     background: whitesmoke;
 }
 
-/* Adds a 20px top margin and 150px right margin to an about paragraph body */
-.about-paragraph-body {
-    margin-top: 20px;
-    margin-right: 150px;
-}
-
-/* Adds a 20px top margin and 20px left margin to an about contact section */
-.about-contact {
+/* Adds a 20px top margin and 20px left margin to an about text section */
+.about-text {
     margin-top: 20px;
     margin-left: 20px;
+    margin-right: 20px;
 }

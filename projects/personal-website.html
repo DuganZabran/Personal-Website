@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- This block contains the head of the HTML document which includes the title, character set, viewport, and external style and script files -->
+  <head>
+    <title>Personal Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/5/spacelab/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/project-posts.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body class="projects-body">
+    <!-- This is a HTML code for a navigation bar with links to different sections of a website. -->
+    <nav class="navbar navbar-expand-sm custom-navbar">
+      <a class="navbar-brand custom-navbar-brand" href="#">
+        <h1 class="navbar-title custom-navbar-title"><b>Dugan Zabran</b></h1>
+        <h6 class="navbar-title custom-navbar-title">Cybersecurity Analyst</h6>
+      </a>
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="../about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="../projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="../blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link" href="../resume.html">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- This <img> tag displays a screenshot of the personal website, using the "projects-image" class to style it. -->
+    <img src="../imgs/personal-website.png" class="projects-image">
+    <!-- Blog post about creating a personal website using HTML, CSS, Bootstrap, and AWS. -->
+    <body>
+        <div class="projects-text">
+            <h3>Creating My Personal Website: A Journey in HTML, CSS, Bootstrap, and AWS</h1>
+            <br>
+            <h6>Tools and Technology:</h2>
+            <ul>
+                <li>HTML and CSS for front-end development</li>
+                <li>Bootstrap for responsive design and UI components</li>
+                <li>Amazon S3, Route 53, ACM, and CloudFront for web hosting and delivery</li>
+                <li>GitHub for version control and collaboration</li>
+                <li>GitHub Actions for continuous integration and deployment</li>
+            </ul> 
+            <p>You can check out the code for my website on my GitHub repository: <a href="https://github.com/DuganZabran/Personal-Website" target="_blank">https://github.com/DuganZabran/Personal-Website</a></p>
+            <p>Building a website is an exciting challenge that requires a mix of creativity, technical skills, and persistence. In my case, I wanted to create a personal website that showcased my skills, interests, and projects in a simple and elegant way. After researching various tools and frameworks, I settled on using HTML, CSS, Bootstrap, Amazon Web Services (AWS), and GitHub Actions to build and deploy my site.</p>
+            <h6>Front-End Development with HTML, CSS, and Bootstrap</h2>
+            <p>To create the look and feel of my website, I used HTML and CSS to write the markup and styles for each page. I started by sketching out a wireframe of the site's layout, which helped me to plan the structure and content of each section. Then, I coded each page using semantic HTML tags, such as &lt;header&gt;, &lt;main&gt;, &lt;nav&gt;, &lt;section&gt;, and &lt;footer&gt;, to provide meaningful structure to the content. I also used CSS to style the typography, colors, spacing, and layout of the site, following the principles of responsive design to ensure that it looked good on different screen sizes and devices.</p>
+            <p>To speed up my development process and improve the consistency of my design, I also used Bootstrap, a popular front-end framework that provides pre-built HTML and CSS components, such as buttons, forms, cards, modals, and grids. By using Bootstrap's classes and styles, I was able to create a professional-looking site without spending too much time styling or reinventing the wheel.</p>
+            <h6>Back-End Infrastructure with AWS</h6>
+            <p>Once I had the front end of my site working locally, I needed to deploy it to the web so that others could access it. For this, I chose to use AWS, a cloud computing platform that offers a range of services for hosting, managing and scaling web applications.</p>
+            <p>To store my website's files and assets, I used Amazon S3, a simple storage service that allows you to upload and download objects (files) via HTTP or HTTPS. I created a new S3 bucket and configured it to host a static website, which involved setting the bucket policy, creating an index document, and enabling website hosting. Then, I uploaded my HTML, CSS, and image files to the bucket, and voila! My site was live on the internet.</p>
+            <p>To add a custom domain name to my site, I used Amazon Route 53, a domain name system (DNS) service that allows you to register, manage, and route domain names to your resources. I purchased a domain name from a registrar and then created a new hosted zone in Route 53, which involved adding the domain name and specifying the name servers. Then, I created a new record set that mapped my domain name to my S3 bucket endpoint and waited for the DNS propagation to complete.</p>
+            <p>o secure my website's traffic with SSL/TLS encryption, I used Amazon Certificate Manager (ACM), a service that provides free SSL/TLS certificates for your domains and subdomains. I requested a new certificate for my domain name in ACM and validated it by adding a CNAME record to my Route 53 hosted zone. Once the certificate was issued, I enabled HTTPS on my S3 bucket and CloudFront distribution, which acts as a content delivery network (CDN) that caches and serves my website's files from edge locations around the world. This not only improves the site's performance and reliability but also ensures that visitors can access it securely via HTTPS.</p>
+            <h6>CI/CD with GitHub Actions</h6>
+            <p>Finally, to automate the process of updating my S3 bucket whenever I make changes to the code, I used GitHub Actions, a feature of GitHub that allows you to run custom workflows in response to events, such as a new commit or a pull request. I created a new workflow that listens to changes in my main branch and authenticates with AWS using an IAM user that I created specifically for this purpose. This workflow then uses the AWS CLI to sync the generated files with my S3 bucket. This ensures that my site is always up-to-date and consistent with my latest changes, without requiring me to manually upload the files each time.</p>
+            <h6>Conclusion</h6>
+            <p>Creating my personal website was a challenging and rewarding experience that taught me a lot about web development, AWS, and GitHub Actions. By using HTML, CSS, Bootstrap, AWS, and GitHub Actions, I was able to build and deploy a simple and elegant site that showcases my skills and interests. I hope that this post has been helpful and informative for anyone who is interested in creating their own website or learning more about web development. Feel free to check out the code for my site on GitHub and let me know if you have any feedback or questions!</p>
+        </div>
+    </body>
+  </body>
+</html>
